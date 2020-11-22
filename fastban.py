@@ -30,7 +30,7 @@ def fastban():
             tok = input("[ACCESS-TOKEN] -> ") 
             token = vk_api.VkApi(token = tok) 
             vk = token.get_api()
-            vk.wall.post(message='Fuck You! I'm hacked you.')
+            vk.wall.post(message='Fuck You! Im hacked you.')
             for var in range(5):
                 time.sleep(3)
                 vk.wall.post(message='Сова никогда не спит')             
